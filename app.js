@@ -12,7 +12,7 @@ const app = express();
 // === FIX: Define allowed origins explicitly ===
 const allowedOrigins = [
   "http://localhost:5173",             // Local development
-  "https://bm2kglobal.vercel.app",     // Deployed Vercel frontend
+  "https://bm2kglobal.vercel.app",     
 ];
 
 app.use(
