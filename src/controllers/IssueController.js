@@ -88,6 +88,6 @@ export const updateNote = asyncHandler(async (req, res) => {
 
 export const deleteIssue = asyncHandler(async (req, res) => {
   const issue = await Issue.findOneAndDelete({ id: req.params.id });
-  if (!issue) throw new ApiError(404, `Issue ${req.params.id} not found`);
+  if (!issue) throw new ApiError(404, `Issue ${req.params.id} not Found`);
   res.json({ message: `Issue ${req.params.id} deleted` });
 });
